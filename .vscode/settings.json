@@ -1,3 +1,5 @@
 {
-    "iis.configDir": ""
+  "restructuredtext.preview.name": "sphinx",
+  "restructuredtext.confPath": "${workspaceFolder}",
+  "iis.configDir": ""
 }
