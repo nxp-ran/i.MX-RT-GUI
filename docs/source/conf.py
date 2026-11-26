@@ -2,12 +2,13 @@
 
 # -- Project information
 
-project = 'readdoctest'
+project = 'i.MX RT GUI'
 copyright = '2024, Ran'
 author = 'Ran'
 
 release = '0.1'
 version = '0.1.1'
+language = 'zh_CN'
 
 # -- General configuration
 
@@ -17,7 +18,13 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'myst_parser',
 ]
+
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
