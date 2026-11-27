@@ -4,6 +4,8 @@
 >
 > Previous: [A Reusable Display Bring-Up and Troubleshooting Process](08-display-bring-up.md)
 >
+> Next: [Why Does GUI Performance Depend on Memory?](10-memory-system.md)
+>
 > Goal: Follow memory reads, pixel interpretation, FIFO, and timing output, distinguishing address submission, events, and safe reuse.
 >
 > Scope: Public eLCDIF/LCDIFv2 drivers and examples, not one universal i.MX RT IP. Address and bandwidth examples are software models, not ready-to-use board layouts.
@@ -317,7 +319,7 @@ Understand layout, format, FIFO, events, and update mechanisms together.
 
 A next-frame address expresses intent. An event provides phase evidence. Old-buffer reuse requires the complete ownership contract.
 
-Next: **Why Does GUI Performance Depend on Memory?**, examining RAM, external storage, resource layout, and contention.
+Next: [Why Does GUI Performance Depend on Memory?](10-memory-system.md), examining RAM, external storage, resource layout, and contention.
 
 ## References
 

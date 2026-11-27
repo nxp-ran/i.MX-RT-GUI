@@ -7,8 +7,8 @@ Both reStructuredText (`.rst`) and Markdown (`.md`) are supported.
 
 ## GUI series
 
-The [series outline](docs/source/imxrt-gui/README.md) covers 24 planned articles.
-The following full articles are available:
+The [series outline](docs/source/imxrt-gui/README.md) links to all 24 completed
+articles in both languages:
 
 1. [GUI system overview](docs/source/imxrt-gui/01-gui-system-overview.md)
 2. [Platform selection](docs/source/imxrt-gui/02-platform-selection.md)
@@ -19,10 +19,30 @@ The following full articles are available:
 7. [MIPI DSI displays](docs/source/imxrt-gui/07-mipi-dsi-display.md)
 8. [Display bring-up and troubleshooting](docs/source/imxrt-gui/08-display-bring-up.md)
 9. [LCDIF / eLCDIF controllers](docs/source/imxrt-gui/09-lcdif-elcdif.md)
+10. [Memory system](docs/source/imxrt-gui/10-memory-system.md)
+11. [Buffering and tearing](docs/source/imxrt-gui/11-buffering-and-tearing.md)
+12. [Cache, MPU and DMA](docs/source/imxrt-gui/12-cache-mpu-dma.md)
+13. [PXP capabilities](docs/source/imxrt-gui/13-pxp-capabilities.md)
+14. [PXP pipelines](docs/source/imxrt-gui/14-pxp-pipeline.md)
+15. [GPU and VG-Lite](docs/source/imxrt-gui/15-gpu-vglite.md)
+16. [Backend selection](docs/source/imxrt-gui/16-render-backend-selection.md)
+17. [Minimal LVGL port](docs/source/imxrt-gui/17-lvgl-minimal-port.md)
+18. [LVGL refresh](docs/source/imxrt-gui/18-lvgl-refresh.md)
+19. [LVGL acceleration](docs/source/imxrt-gui/19-lvgl-acceleration.md)
+20. [Touch and RTOS](docs/source/imxrt-gui/20-touch-rtos.md)
+21. [Images and fonts](docs/source/imxrt-gui/21-images-fonts.md)
+22. [Performance testing](docs/source/imxrt-gui/22-performance-testing.md)
+23. [Bottleneck optimization](docs/source/imxrt-gui/23-bottleneck-optimization.md)
+24. [Complete GUI case](docs/source/imxrt-gui/24-complete-gui-case.md)
 
 The [English outline](docs/source/en/imxrt-gui/README.md) links to complete
 English translations. Each website page has a language button that opens its
 counterpart, not the other language's homepage.
+
+LVGL code examples in the later chapters target version 9.2.0. Board-specific
+display, input, fonts and accelerator integration still require the actual SDK
+and hardware. Synthetic calculations and host validation are not board
+performance results or a claim of ready-to-flash firmware.
 
 The first four Chinese articles were copied from the SDK project's documentation
 without removing the originals. New articles and the English versions are

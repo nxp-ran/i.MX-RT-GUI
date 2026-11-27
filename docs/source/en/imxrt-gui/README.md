@@ -17,6 +17,25 @@
 | 7 | [MIPI DSI Displays: The High-Speed Serial Link](07-mipi-dsi-display.md) |
 | 8 | [A Reusable Display Bring-Up and Troubleshooting Process](08-display-bring-up.md) |
 | 9 | [How Do LCDIF / eLCDIF Display Controllers Work?](09-lcdif-elcdif.md) |
+| 10 | [Why Does GUI Performance Depend on Memory?](10-memory-system.md) |
+| 11 | [Single/Double Buffering and Tearing](11-buffering-and-tearing.md) |
+| 12 | [Cache, MPU, and DMA Coherency](12-cache-mpu-dma.md) |
+| 13 | [PXP Capabilities and Limits](13-pxp-capabilities.md) |
+| 14 | [PXP in Practice: From One Operation to an Asynchronous Pipeline](14-pxp-pipeline.md) |
+| 15 | [GPU and VG-Lite Basics](15-gpu-vglite.md) |
+| 16 | [Choosing CPU, PXP, or GPU](16-render-backend-selection.md) |
+| 17 | [A Minimal LVGL Port with Software Rendering](17-lvgl-minimal-port.md) |
+| 18 | [LVGL Refresh and Rendering](18-lvgl-refresh.md) |
+| 19 | [Connecting LVGL to PXP / GPU](19-lvgl-acceleration.md) |
+| 20 | [Touch, RTOS, and Thread Safety](20-touch-rtos.md) |
+| 21 | [Engineering Images, Fonts, and Chinese Interfaces](21-images-fonts.md) |
+| 22 | [Trustworthy GUI Performance Testing](22-performance-testing.md) |
+| 23 | [Optimize the Bottleneck, Not the Acceleration Checkbox](23-bottleneck-optimization.md) |
+| 24 | [A Deliverable i.MX RT GUI](24-complete-gui-case.md) |
+
+All 24 articles are complete in both languages. Later code targets LVGL 9.2.0.
+Theory, host examples and implementation procedures do not replace board
+performance, electrical validation or firmware acceptance.
 
 ## I. What Does This Series Address?
 
@@ -260,6 +279,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 
 **Deliverable:** A GUI memory map and module-to-memory access table.
 
+**Full article:** [Read Article 10](10-memory-system.md).
+
 ### Article 11: Single/Double Buffering and Tearing
 
 **Key question:** Why does another buffer not automatically eliminate tearing?
@@ -274,6 +295,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 
 **Deliverable:** Buffer timing diagrams and reproducible tearing comparisons.
 
+**Full article:** [Read Article 11](11-buffering-and-tearing.md).
+
 ### Article 12: Cache, MPU, and DMA Coherency
 
 **Key question:** Why can a peripheral see old pixels after the CPU has changed them?
@@ -287,6 +310,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 - Cached versus uncached buffers.
 
 **Deliverable:** Synchronization timelines for representative data flows and a stale-image fix.
+
+**Full article:** [Read Article 12](12-cache-mpu-dma.md).
 
 ## Part Four: PXP and GPU Acceleration
 
@@ -304,6 +329,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 
 **Deliverable:** The selected platform's PXP capability and restriction list.
 
+**Full article:** [Read Article 13](13-pxp-capabilities.md).
+
 ### Article 14: PXP in Practice: From One Operation to an Asynchronous Pipeline
 
 **Key question:** How do you reliably integrate hardware processing into display updates?
@@ -317,6 +344,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 - Synchronous waiting versus asynchronous pipelines.
 
 **Deliverable:** Verifiable examples and measurement records.
+
+**Full article:** [Read Article 14](14-pxp-pipeline.md).
 
 ### Article 15: GPU and VG-Lite Basics [Supported Devices]
 
@@ -332,6 +361,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 
 **Deliverable:** Minimal rendering flow and a CPU/driver/GPU/memory diagram.
 
+**Full article:** [Read Article 15](15-gpu-vglite.md).
+
 ### Article 16: Choosing CPU, PXP, or GPU
 
 **Key question:** When does acceleration help, and when does its overhead dominate?
@@ -345,6 +376,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 - Mark unsupported operations as not applicable rather than comparing inequivalent results.
 
 **Deliverable:** A workload-based execution-backend decision table.
+
+**Full article:** [Read Article 16](16-render-backend-selection.md).
 
 ## Part Five: Porting and Understanding LVGL
 
@@ -362,6 +395,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 
 **Deliverable:** A minimal working port and interface-responsibility table.
 
+**Full article:** [Read Article 17](17-lvgl-minimal-port.md).
+
 ### Article 18: LVGL Refresh and Rendering
 
 **Key question:** Why does LVGL redraw only some regions, and how does it submit the result?
@@ -375,6 +410,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 - Conditions for rendering/transfer overlap.
 
 **Deliverable:** Buffer strategies and refresh timelines for different architectures.
+
+**Full article:** [Read Article 18](18-lvgl-refresh.md).
 
 ### Article 19: Connecting LVGL to PXP / GPU
 
@@ -390,6 +427,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 
 **Deliverable:** Integration checklist and software/hardware execution comparisons.
 
+**Full article:** [Read Article 19](19-lvgl-acceleration.md).
+
 ### Article 20: Touch, RTOS, and Thread Safety
 
 **Key question:** How can input, application tasks, and GUI updates cooperate reliably?
@@ -404,6 +443,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 
 **Deliverable:** Task/interrupt interaction diagram and latency analysis.
 
+**Full article:** [Read Article 20](20-touch-rtos.md).
+
 ### Article 21: Engineering Images, Fonts, and Chinese Interfaces
 
 **Key question:** How can resource-rich interfaces control capacity, loading time, and runtime memory?
@@ -417,6 +458,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 - Quality, package size, memory, and startup trade-offs.
 
 **Deliverable:** Resource organization and capacity/runtime-memory budgets.
+
+**Full article:** [Read Article 21](21-images-fonts.md).
 
 ## Part Six: Measurement and a Complete Project
 
@@ -434,6 +477,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 
 **Deliverable:** Standard testing procedure and reusable result records.
 
+**Full article:** [Read Article 22](22-performance-testing.md).
+
 ### Article 23: Optimize the Bottleneck, Not the Acceleration Checkbox
 
 **Key question:** Which part of the chain is worth optimizing?
@@ -448,6 +493,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 
 **Deliverable:** Complete symptom → evidence → change → retest cases.
 
+**Full article:** [Read Article 23](23-bottleneck-optimization.md).
+
 ### Article 24: A Deliverable i.MX RT GUI
 
 **Key question:** How do the layers combine into a stable, maintainable application?
@@ -461,6 +508,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 - Review display, chip, memory, and architecture choices.
 
 **Deliverable:** A complete project with platform details, measurements, and known limitations.
+
+**Full article:** [Read Article 24](24-complete-gui-case.md).
 
 ## IV. A Shared Experimental Progression
 

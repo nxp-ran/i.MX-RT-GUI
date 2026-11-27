@@ -10,9 +10,8 @@ Use the language button above the page content to read the same page in Chinese.
 
 .. note::
 
-   The outline covers 24 planned articles. The outline and first nine full
-   articles are available in both Chinese and English. Theory and calculation
-   examples are distinguished from board-specific measurements.
+   All 24 articles are available in Chinese and English. Theory, host software
+   examples and validation procedures are distinguished from board measurements.
 
 .. toctree::
    :maxdepth: 1
@@ -44,6 +43,37 @@ Use the language button above the page content to read the same page in Chinese.
    :caption: Display peripherals and data paths
 
    imxrt-gui/09-lcdif-elcdif
+
+   imxrt-gui/10-memory-system
+   imxrt-gui/11-buffering-and-tearing
+   imxrt-gui/12-cache-mpu-dma
+
+.. toctree::
+   :maxdepth: 1
+   :caption: PXP and GPU acceleration
+
+   imxrt-gui/13-pxp-capabilities
+   imxrt-gui/14-pxp-pipeline
+   imxrt-gui/15-gpu-vglite
+   imxrt-gui/16-render-backend-selection
+
+.. toctree::
+   :maxdepth: 1
+   :caption: LVGL porting and engineering
+
+   imxrt-gui/17-lvgl-minimal-port
+   imxrt-gui/18-lvgl-refresh
+   imxrt-gui/19-lvgl-acceleration
+   imxrt-gui/20-touch-rtos
+   imxrt-gui/21-images-fonts
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Performance and complete case
+
+   imxrt-gui/22-performance-testing
+   imxrt-gui/23-bottleneck-optimization
+   imxrt-gui/24-complete-gui-case
 
 .. toctree::
    :maxdepth: 1
