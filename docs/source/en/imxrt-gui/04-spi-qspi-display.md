@@ -4,6 +4,8 @@
 >
 > Previous: [Budget Resolution, Display Memory, and Bandwidth Before Choosing a Screen](03-memory-and-bandwidth.md)
 >
+> Next: [8080 / DBI Parallel Displays with FlexIO and Other Resources](05-flexio-dbi-display.md)
+>
 > Goal: Understand command and pixel transfers to serial displays with GRAM, then establish correct region updates, DMA, and asynchronous buffer handoffs.
 >
 > Assumptions: A common four-wire SPI model with eight-bit commands and RGB565 window writes. Examples use the common `0x2A / 0x2B / 0x2C` meanings, not universal panel initialization. The QSPI discussion explains compatibility checks, not a preselected MCU/panel combination.
@@ -840,7 +842,7 @@ For serial GRAM displays:
 
 Only then do DMA and double buffering provide reliable performance benefits.
 
-Next: **8080 / DBI Parallel Displays with FlexIO and Other Resources**, applying the same region-update ideas to parallel timing, pins, and DMA.
+Next: [8080 / DBI Parallel Displays with FlexIO and Other Resources](05-flexio-dbi-display.md), applying the same region-update ideas to parallel timing, pins, and DMA.
 
 ## References
 

@@ -14,14 +14,19 @@ The following full articles are available:
 2. [Platform selection](docs/source/imxrt-gui/02-platform-selection.md)
 3. [Memory and bandwidth](docs/source/imxrt-gui/03-memory-and-bandwidth.md)
 4. [SPI and QSPI displays](docs/source/imxrt-gui/04-spi-qspi-display.md)
+5. [8080 / DBI and FlexIO](docs/source/imxrt-gui/05-flexio-dbi-display.md)
+6. [RGB displays and scanout](docs/source/imxrt-gui/06-rgb-display.md)
+7. [MIPI DSI displays](docs/source/imxrt-gui/07-mipi-dsi-display.md)
+8. [Display bring-up and troubleshooting](docs/source/imxrt-gui/08-display-bring-up.md)
+9. [LCDIF / eLCDIF controllers](docs/source/imxrt-gui/09-lcdif-elcdif.md)
 
 The [English outline](docs/source/en/imxrt-gui/README.md) links to complete
 English translations. Each website page has a language button that opens its
 counterpart, not the other language's homepage.
 
-The articles were copied from the SDK project's documentation without removing
-the originals. This repository now contains the publishing copy; edit articles
-here when preparing website updates.
+The first four Chinese articles were copied from the SDK project's documentation
+without removing the originals. New articles and the English versions are
+maintained here; edit this repository when preparing website updates.
 
 ## Local setup and build
 

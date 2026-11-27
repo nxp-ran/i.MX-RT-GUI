@@ -12,6 +12,11 @@
 | 2 | [i.MX RT Graphics Capabilities and Platform Selection](02-platform-selection.md) |
 | 3 | [Budget Resolution, Display Memory, and Bandwidth Before Choosing a Screen](03-memory-and-bandwidth.md) |
 | 4 | [SPI / QSPI Displays: From Commands to Partial Updates](04-spi-qspi-display.md) |
+| 5 | [8080 / DBI Parallel Displays with FlexIO and Other Resources](05-flexio-dbi-display.md) |
+| 6 | [RGB Displays: Pixel Clock and Continuous Scanout](06-rgb-display.md) |
+| 7 | [MIPI DSI Displays: The High-Speed Serial Link](07-mipi-dsi-display.md) |
+| 8 | [A Reusable Display Bring-Up and Troubleshooting Process](08-display-bring-up.md) |
+| 9 | [How Do LCDIF / eLCDIF Display Controllers Work?](09-lcdif-elcdif.md) |
 
 ## I. What Does This Series Address?
 
@@ -171,6 +176,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 
 **Deliverable:** Timing documentation and equivalent-workload comparisons.
 
+**Full article:** [Read Article 5](05-flexio-dbi-display.md).
+
 ### Article 6: RGB Displays: Pixel Clock and Continuous Scanout
 
 **Key question:** Why does an RGB display normally need a continuous MCU pixel stream?
@@ -184,6 +191,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 - Investigation of incorrect colors, offsets, jitter, and corrupted images.
 
 **Deliverable:** Panel-to-controller parameter mapping and a color-bar example.
+
+**Full article:** [Read Article 6](06-rgb-display.md).
 
 ### Article 7: MIPI DSI Displays: The High-Speed Serial Link
 
@@ -199,6 +208,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 
 **Deliverable:** Link diagram, configuration checklist, and layered troubleshooting.
 
+**Full article:** [Read Article 7](07-mipi-dsi-display.md).
+
 ### Article 8: A Reusable Display Bring-Up and Troubleshooting Process
 
 **Key question:** How can you investigate a dark or incorrect display without blindly changing parameters?
@@ -212,6 +223,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 - Record symptoms, conditions, investigation, and fixes.
 
 **Deliverable:** A reusable bring-up checklist.
+
+**Full article:** [Read Article 8](08-display-bring-up.md).
 
 > Extension topic: LVDS or HDMI through external bridges. Clearly distinguish native device interfaces from bridge capabilities.
 
@@ -230,6 +243,8 @@ The "Deliverable" below is the writing objective of each article, not a claim th
 - Common principles and differences across controller versions.
 
 **Deliverable:** A complete memory-read-to-pixel-output path.
+
+**Full article:** [Read Article 9](09-lcdif-elcdif.md).
 
 ### Article 10: Why Does GUI Performance Depend on Memory?
 

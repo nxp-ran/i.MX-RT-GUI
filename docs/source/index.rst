@@ -9,7 +9,7 @@ i.MX RT GUI
 
 .. note::
 
-   系列规划为 24 篇，目前已提供总纲及前 4 篇的中英文正文。
+   系列规划为 24 篇，目前已提供总纲及前 9 篇的中英文正文。
    理论说明与计算示例均明确区别于板卡实测。
 
 .. toctree::
@@ -31,6 +31,17 @@ i.MX RT GUI
    :caption: 屏幕接口
 
    imxrt-gui/04-spi-qspi-display
+
+   imxrt-gui/05-flexio-dbi-display
+   imxrt-gui/06-rgb-display
+   imxrt-gui/07-mipi-dsi-display
+   imxrt-gui/08-display-bring-up
+
+.. toctree::
+   :maxdepth: 1
+   :caption: 显示外设与数据通路
+
+   imxrt-gui/09-lcdif-elcdif
 
 .. toctree::
    :maxdepth: 1

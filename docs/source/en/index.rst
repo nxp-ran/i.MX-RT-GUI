@@ -10,7 +10,7 @@ Use the language button above the page content to read the same page in Chinese.
 
 .. note::
 
-   The outline covers 24 planned articles. The outline and first four full
+   The outline covers 24 planned articles. The outline and first nine full
    articles are available in both Chinese and English. Theory and calculation
    examples are distinguished from board-specific measurements.
 
@@ -33,6 +33,17 @@ Use the language button above the page content to read the same page in Chinese.
    :caption: Display interfaces
 
    imxrt-gui/04-spi-qspi-display
+
+   imxrt-gui/05-flexio-dbi-display
+   imxrt-gui/06-rgb-display
+   imxrt-gui/07-mipi-dsi-display
+   imxrt-gui/08-display-bring-up
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Display peripherals and data paths
+
+   imxrt-gui/09-lcdif-elcdif
 
 .. toctree::
    :maxdepth: 1
