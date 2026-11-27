@@ -1,0 +1,12 @@
+{% extends "!page.html" %}
+
+{% block extrahead %}
+{{ super() }}
+<link rel="alternate" hreflang="{{ language_switch_lang }}"
+      href="{{ language_switch_url|e }}">
+{% endblock %}
+
+{% block content %}
+{% include "language-switch.html" %}
+{{ super() }}
+{% endblock %}

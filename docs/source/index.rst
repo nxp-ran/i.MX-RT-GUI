@@ -1,28 +1,26 @@
 i.MX RT GUI
 ===========
 
-From lighting up a display to building a high-performance GUI, this series
-follows the complete pixel data path on i.MX RT:
-display interfaces, display controllers, memory, PXP/GPU and LVGL.
+从点亮屏幕到高性能 GUI，本系列沿着 i.MX RT 的完整像素数据路径展开：
+屏幕接口、显示控制器、存储系统、PXP/GPU 与 LVGL。
 
-Start with the :doc:`series outline <imxrt-gui/README>` for the full roadmap.
-The articles are written in Chinese.
+建议先阅读 :doc:`系列总纲 <imxrt-gui/README>`。
+点击正文顶部的 ``English`` 按钮，可以阅读当前页面的完整英文版。
 
 .. note::
 
-   The outline covers 24 planned articles. The first four full articles are
-   available below. Theory and calculation examples are distinguished from
-   board-specific measurements.
+   系列规划为 24 篇，目前已提供总纲及前 4 篇的中英文正文。
+   理论说明与计算示例均明确区别于板卡实测。
 
 .. toctree::
    :maxdepth: 1
-   :caption: Series outline
+   :caption: 系列总纲
 
    imxrt-gui/README
 
 .. toctree::
    :maxdepth: 1
-   :caption: GUI fundamentals
+   :caption: GUI 系统基础
 
    imxrt-gui/01-gui-system-overview
    imxrt-gui/02-platform-selection
@@ -30,13 +28,13 @@ The articles are written in Chinese.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Display interfaces
+   :caption: 屏幕接口
 
    imxrt-gui/04-spi-qspi-display
 
 .. toctree::
    :maxdepth: 1
-   :caption: Writing and original examples
+   :caption: 写作指南与原始示例
 
    markdown
    usage

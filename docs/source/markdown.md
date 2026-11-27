@@ -9,7 +9,8 @@ documentation.
 1. Create a Markdown file under the documentation source directory.
 2. Start the article with one level-one heading, such as `# GUI overview`.
 3. Add its path, without the file extension, to the homepage's `toctree`.
-4. Build the HTML documentation and check the article and its navigation.
+4. Add its English counterpart, using the same relative path under `en`.
+5. Add the article to both homepages and build the bilingual documentation.
 
 For example, a new article named `gui-overview.md` can be added to the existing
 reStructuredText homepage as follows:
@@ -77,13 +78,18 @@ repository root in PowerShell:
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r docs\requirements.txt
-.\.venv\Scripts\python.exe -m sphinx -W --keep-going -b html docs\source docs\build\html
+.\.venv\Scripts\python.exe docs\build_bilingual.py
 ```
 
 Create the local virtual environment first if it does not exist, using
 `python -m venv .venv`. Activation is not required when using its Python
 executable directly.
 
-Read the Docs already installs the same requirements and uses the existing
-Sphinx configuration. No hosting change is required; publishing still follows
-the project's existing Git and Read the Docs workflow.
+The build checks that both languages contain the same documents. Chinese HTML
+is generated at the output root, and English HTML under `en`. Each language has
+its own navigation and search index. The language button links to the same
+document in the other language.
+
+Read the Docs installs the same requirements and runs this bilingual builder
+through the repository's hosting configuration. Publishing follows the existing
+Git and Read the Docs workflow; no second hosting project is required.
