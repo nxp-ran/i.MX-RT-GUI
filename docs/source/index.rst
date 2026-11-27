@@ -34,8 +34,6 @@ i.MX RT GUI
 
 .. toctree::
    :maxdepth: 1
-   :caption: 写作指南与原始示例
+   :caption: 写作指南
 
    markdown
-   usage
-   api

@@ -36,8 +36,6 @@ Use the language button above the page content to read the same page in Chinese.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Writing and original examples
+   :caption: Writing guide
 
    markdown
-   usage
-   api

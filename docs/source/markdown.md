@@ -18,8 +18,6 @@ reStructuredText homepage as follows:
 ```rst
 .. toctree::
 
-   usage
-   api
    markdown
    gui-overview
 ```
@@ -55,10 +53,9 @@ HTML build.
 Use relative paths rather than local absolute filesystem paths. MyST resolves
 links to source documents into links to the corresponding HTML pages.
 
-These links point to existing reStructuredText documents:
+This link points to the reStructuredText homepage:
 
 - [Documentation homepage](index.rst)
-- [Usage](usage.rst)
 
 The following is example syntax for another Markdown article and an image:
 
